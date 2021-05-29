@@ -16,6 +16,10 @@ Windows的putty连接Linux拒绝访问https://blog.csdn.net/wanderbing/article/d
 
 Linux安装node和npmhttps://www.cnblogs.com/JahanGu/p/12917893.html
 
+ubuntu中用gedit保存文件失败的解决方法https://blog.csdn.net/xsf671216/article/details/84391967
+
+[将Ubuntu主文件夹里的中文文件夹名称改成英文](https://blog.csdn.net/star2523/article/details/5779727?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&dist_request_id=1619684779994_23943&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control)
+
 ### 二、Linux知识
 
 Linux的后缀名https://blog.csdn.net/li_xunhuan/article/details/90932399
