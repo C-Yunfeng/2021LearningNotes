@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--1.导入spring的坐标spring-context，对应版本是5.2.10.RELEASE-->
+
+    <!--2.配置bean-->
+    <!--bean标签标示配置bean
+    id属性标示给bean起名字,ID配置的都是变量，所以是小写
+    class属性表示给bean定义类型-->
+    <!-- <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"></bean> -->
+    <!-- LifeCycle -->
+    <!-- <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl" init-method="init" destroy-method="destroy"></bean> -->
+    <!-- StaticFactory -->
+    <!-- <bean id="bookDao" class="com.itheima.factory.StaticFactory" factory-method="getBookDao"></bean> -->
+    <!-- DynamicFactory -->
+    <!-- <bean id="factory" class="com.itheima.factory.DynamicFactory"></bean> -->
+    <!-- <bean id="bookDao" factory-bean="factory" factory-method="getBookDao"></bean> -->
+
+    <!-- <bean id="bookService" class="com.itheima.service.impl.BookServiceImpl"> -->
+    <!--     &lt;!&ndash;7.配置server与dao的关系&ndash;&gt; -->
+    <!--     &lt;!&ndash;property标签表示配置当前bean的属性 -->
+    <!--     name属性表示配置哪一个具体的属性 -->
+    <!--     ref属性表示参照哪一个bean&ndash;&gt; -->
+    <!--     <property name="bookDao" ref="bookDao"/> -->
+    <!-- </bean> -->
+
+    <!-- Property -->
+    <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"></bean>
+    <bean id="bookService" class="com.itheima.service.impl.BookServiceImpl">
+        <property name="bookDao" ref="bookDao"></property>
+    </bean>
+    <!-- ConstructorArg -->
+    <!-- <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"></bean> -->
+    <!-- <bean id="bookService" class="com.itheima.service.impl.BookServiceImpl"> -->
+    <!--     <constructor-arg name="bookDao" ref="bookDao"></constructor-arg> -->
+    <!-- </bean> -->
+    <!-- DI_BasicDataType -->
+    <!-- <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"> -->
+    <!--     <property name="username" value="zhangsan"></property> -->
+    <!-- </bean> -->
+    <!-- <bean id="bookService" class="com.itheima.service.impl.BookServiceImpl"> -->
+    <!--     <property name="bookDao" ref="bookDao"></property> -->
+    <!-- </bean> -->
+
+    <!-- 一般不会注入集合/基础类型。集合是用静态变量，基础类型一般是数据库配置到文件里 -->
+    <!-- <bean id="bookDao" class="com.itheima.dao.impl.BookDaoImpl"> -->
+    <!--     <property name="strList"> -->
+    <!--         <list> -->
+    <!--             <value>wei</value> -->
+    <!--             <value>miu</value> -->
+    <!--         </list> -->
+    <!--     </property> -->
+    <!--     <property name="userMap"> -->
+    <!--         <map> -->
+    <!--             <entry key="u1" value-ref="user1"></entry> -->
+    <!--             <entry key="u2" value-ref="user2"></entry> -->
+    <!--         </map> -->
+    <!--     </property> -->
+    <!--     <property name="properties"> -->
+    <!--         <props> -->
+    <!--             <prop key="p1">ppp1</prop> -->
+    <!--             <prop key="p2">p2</prop> -->
+    <!--             <prop key="p3">p3</prop> -->
+    <!--         </props> -->
+    <!--     </property> -->
+    <!-- </bean> -->
+    <!-- <bean id="user1" class="com.itheima.domain.User"> -->
+    <!--     <property name="name" value="wei"></property> -->
+    <!--     <property name="addr" value="beijing"></property> -->
+    <!-- </bean> -->
+    <!-- <bean id="user2" class="com.itheima.domain.User"> -->
+    <!--     <property name="name" value="miu"></property> -->
+    <!--     <property name="addr" value="shanghai"></property> -->
+    <!-- </bean> -->
+    <!-- <bean id="bookService" class="com.itheima.service.impl.BookServiceImpl"> -->
+    <!--     <property name="bookDao" ref="bookDao"></property> -->
+    <!-- </bean> -->
+
+
+
+</beans>
