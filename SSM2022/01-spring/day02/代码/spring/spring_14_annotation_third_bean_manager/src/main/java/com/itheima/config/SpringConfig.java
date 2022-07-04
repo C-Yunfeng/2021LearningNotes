@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan("com.itheima")
-// @Import(JdbcConfig.class)
+@Import(JdbcConfig.class)
 public class SpringConfig {
     // 2.添加Bean，方法的返回值为bean
 }
