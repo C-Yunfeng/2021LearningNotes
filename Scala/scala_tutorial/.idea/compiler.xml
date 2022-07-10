@@ -9,5 +9,6 @@
         <module name="scala_tutorial" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

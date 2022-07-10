@@ -41,6 +41,6 @@ object Test07_MutableSet {
     println("==================")
 
     // 4. 合并两个Set
-    val set3 =
+    val set3 = 1
   }
 }
