@@ -340,5 +340,178 @@
 
 
 
+#### SpringMVC简介
+
+- 目标
+
+  ![image-20220710155458090](assets/JavaSSM/image-20220710155458090.png)
+
+- 概述
+
+  ![image-20220710155758730](assets/JavaSSM/image-20220710155758730.png)
+
+- 基于Java实现MVC模型的轻量级web框架
+
+- 入门案例
+
+- 入门案例工作流程分析
+
+  ![image-20220710174946664](assets/JavaSSM/image-20220710174946664.png)
+
+  > Mybatis接口，没有实现类：
+  >
+  > 回答：开发mybatis时用的是自动代理创建的实现类，所以dao没有impl
+
+- Controller加载控制与业务bean加载控制
+
+  - @ComponentScan
+
+    - excludeFilters
+    - FilterType.ANNOTATION
+
+  - WEB配置简化开发
+
+    - AbstractDispatcherServletInitializer——AbstractAnnotationConfigDispatcherServletInitializer
+
+      > 用处是什么AbstractDispatcherServletInitializer？
+
+    - createServletApplicationContext——getServletConfigClasses
+
+    - createRootApplicationContext——getRootConfigClasses
+
+    - getServletMappings——getServletMappings
+
+#### 请求与响应
+
+- 请求映射路径
+
+  - 请求路径前缀
+
+    > 怎么修改tomcat的端口
+
+- 请求参数
+
+  - Get
+
+  - Post
+
+  - 乱码处理：过滤器
+
+    - getServletFilters()
+      - CharacterEncodingFilter
+
+  - 传参方式
+
+    - @RequestParam("name") String userName
+
+      绑定请求参数和形参的关系
+
+    - pojoParam()，与实体类形参匹配，则自动注入属性
+
+    - pojoContainPojoParam()，用得少
+
+    - arrayParam
+
+    - listParam，相比arrayParam多了@RequestParam
+
+- 相应json数据
+
+  - SpringMvcConfig：**@EnableWebMvc**，将json转换成对象
+  - **@RequestBody**
+  - 传参类型
+    - listParamForJson
+    - pojoParamForJson
+    - listPojoParamForJson
+
+- 日期类型参数传递
+
+  - @DateTimeFormat(pattern="yyyy-MM-dd")
+  - Converter
+    - String2Integer
+    - String2Date
+
+- 响应
+
+  - 响应页面
+  - 响应数据
+    - 文本数据
+    - **json数据**
+      - @ReponseBody, return user
+      - @ReponseBody, return userList
+  - @ResponseBody
+    - 作用：设置当前控制器返回值作为响应体
+      - HttpMessageConverter<--AbstractJackson2HttpMessageConverter
+
+### 11
+
+#### REST风格
+
+- 行为动作区分
+
+  > 从boot过来恍然大悟？
+
+- @RequestMappint(value = "/users/{id}",method = RequestMethod.GET)
+
+  - @PathVariable Integer id
+
+  > 怎么删除多个？
+
+  ![image-20220712075109731](assets/JavaSSM/image-20220712075109731.png)
+
+  大量用：多个要提交的数据封装成POJO，然后用json串传输
+
+- REST快速开发
+  - @RestController
+    - @ResponseBody，接JSON数据
+    - @Controller
+  - @PostMapping
+  - @DeleteMapping("/{id}")
+  - @PutMapping
+  - @GetMapping("/{id}")
+  - @GetMapping()
+- REST案例
+  - 增post，删delete，改put，查get
+
+### 12
+
+#### REST页面交互
+
+- addResourceHandlers
+- .........完全不会了，代码跑不通？
+
+
+
+#### SSM整合
+
+![image-20220712213314902](assets/JavaSSM/image-20220712213314902.png)
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+表现层数据封装
+
+异常处理器
+
+项目异常处理方案
+
+拦截器
+
 
 

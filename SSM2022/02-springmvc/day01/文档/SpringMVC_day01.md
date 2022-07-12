@@ -1,3 +1,5 @@
+> 教程见：[黑马SSM](  https://www.bilibili.com/video/BV1Fi4y1S7ix?p=44&spm_id_from=pageDriver&vd_source=53bdaa9ea49033bcd28d88360e091a76)
+
 ## SpringMVC_day01
 
 **今日内容**
@@ -394,7 +396,7 @@ public class ServletContainersInitConfig extends AbstractDispatcherServletInitia
     protected WebApplicationContext createServletApplicationContext() {
         //初始化WebApplicationContext对象
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
-        //加载指定配置类
+        //加载指定配置类，register是什么？
         ctx.register(SpringMvcConfig.class);
         return ctx;
     }
@@ -498,6 +500,8 @@ SpringMVC入门程序开发总结(1+N)
     * 重启服务器，访问`http://localhost/delete`,可以看得如下效果:
   
     ![1651602676209](assets/1651602676209.png)
+    
+    > 为什么我的还是save？
 
 最后针对本案例中出现的Tomcat的Servlet容器配置再来总结下:
 

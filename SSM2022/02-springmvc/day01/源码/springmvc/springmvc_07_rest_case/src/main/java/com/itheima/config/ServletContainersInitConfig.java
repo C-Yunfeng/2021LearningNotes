@@ -6,14 +6,17 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 import javax.servlet.Filter;
 
 public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
+    @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[0];
     }
 
+    @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class[]{SpringMvcConfig.class};
     }
 
+    @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }

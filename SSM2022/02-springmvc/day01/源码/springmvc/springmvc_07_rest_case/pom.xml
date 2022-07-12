@@ -7,7 +7,10 @@
   <groupId>com.itheima</groupId>
   <artifactId>springmvc_07_rest_case</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+    <modules>
+        <module>springmvc_08_ssm_cyf</module>
+    </modules>
+    <packaging>pom</packaging>
 
   <dependencies>
     <dependency>

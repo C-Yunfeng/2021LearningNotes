@@ -10,6 +10,7 @@
   <packaging>war</packaging>
 
   <dependencies>
+    <!-- 导入坐标springmvc和servlet -->
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>javax.servlet-api</artifactId>
