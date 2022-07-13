@@ -485,27 +485,33 @@
 
 ![image-20220712213314902](assets/JavaSSM/image-20220712213314902.png)
 
-- 
+- Spring整合Mybatis
+
+  ![image-20220713221411139](assets/JavaSSM/image-20220713221411139.png)
+
+- 步骤1-39
+
+
+
+#### 表现层数据封装
+
+- 封装模型
+
+  ```java
+  public class Result {
+    private Object data;
+    private Integer code;
+    private String msg;
+  }
+  ```
+
+  
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-表现层数据封装
 
 异常处理器
 

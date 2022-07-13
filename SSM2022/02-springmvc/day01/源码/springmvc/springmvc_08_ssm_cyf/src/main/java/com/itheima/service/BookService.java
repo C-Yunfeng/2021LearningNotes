@@ -5,9 +5,12 @@ import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+// 38.给方法配置事务
+@Transactional
 public interface BookService {
     // 20.直接把BookDao的方法复制过来，然后修改
     // 21.增删改返回值为boolean，写文档注释

@@ -24,12 +24,12 @@ public class BookServiceImpl implements BookService {
 
     public boolean update(Book book) {
         bookDao.update(book);
-        return false;
+        return true;
     }
 
     public boolean delete(Integer id) {
         bookDao.delete(id);
-        return false;
+        return true;
     }
 
     public Book getById(Integer id) {

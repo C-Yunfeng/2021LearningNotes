@@ -10,9 +10,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 // 15.配置EnableMvc。
 @EnableWebMvc
 /*
-到此，完成了所有的框架整合，当WEB容器启动时，会加载两个配置类SpringConfig.class和SpringMvcConfig.class，
-SpringConfig加载对应的Bean，SpringMvcConfig加载自己对应的Bean。
-Spring的容器无法访问Mvc的容器，但SpringMvc容器可以访问Spring的容器（父子容器）
+到此，完成了所有的框架整合
  */
 public class SpringMvcConfig {
 }
