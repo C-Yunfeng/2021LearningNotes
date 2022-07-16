@@ -8,6 +8,7 @@ import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
+
 public interface BookDao {
 
 //    @Insert("insert into tbl_book values(null,#{type},#{name},#{description})")

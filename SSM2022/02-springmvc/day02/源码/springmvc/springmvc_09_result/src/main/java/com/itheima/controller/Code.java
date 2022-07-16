@@ -1,6 +1,6 @@
 package com.itheima.controller;
 
-//状态码
+//3.创建一个新的类，定义所有状态码。实际开发用枚举更好？
 public class Code {
     public static final Integer SAVE_OK = 20011;
     public static final Integer DELETE_OK = 20021;

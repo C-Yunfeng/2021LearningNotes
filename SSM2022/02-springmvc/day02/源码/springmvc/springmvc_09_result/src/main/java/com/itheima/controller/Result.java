@@ -1,6 +1,7 @@
 package com.itheima.controller;
 
 public class Result {
+    // 1.定义三个属性
     //描述统一格式中的数据
     private Object data;
     //描述统一格式中的编码，用于区分操作，可以简化配置0或1表示成功失败
@@ -8,6 +9,7 @@ public class Result {
     //描述统一格式中的消息，可选属性
     private String msg;
 
+    // 2.不写set，直接写构造方法。行业开发规范，两个带参的就够用了
     public Result() {
     }
 

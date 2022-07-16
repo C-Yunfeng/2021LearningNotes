@@ -17,6 +17,7 @@ public class BookController {
 
     @PostMapping
     public Result save(@RequestBody Book book) {
+        //4.修改方法的返回类型，返回值
         boolean flag = bookService.save(book);
         return new Result(flag ? Code.SAVE_OK:Code.SAVE_ERR,flag);
     }
@@ -36,6 +37,7 @@ public class BookController {
     @GetMapping("/{id}")
     public Result getById(@PathVariable Integer id) {
         Book book = bookService.getById(id);
+        // 5.处理message
         Integer code = book != null ? Code.GET_OK : Code.GET_ERR;
         String msg = book != null ? "" : "数据查询失败，请重试！";
         return new Result(code,book,msg);
