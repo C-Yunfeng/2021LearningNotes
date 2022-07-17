@@ -17,7 +17,17 @@ public class App {
         BookServiceImpl bookServiceimpl = ctx.getBean(BookServiceImpl.class);
         bookServiceimpl.save();
 
-
-
+        try{
+            int a=1/0;
+        }
+        catch(ArithmeticException ae){
+            System.out.println("ae");
+        }
+        catch (NumberFormatException ne){
+            System.out.println("ne");
+        }
+        finally {
+            System.out.println("finally");
+        }
     }
 }

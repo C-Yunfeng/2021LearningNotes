@@ -12,9 +12,14 @@ import java.util.List;
 // 22.写实现类
 public class BookServiceImpl implements BookService {
     // 23.用Dao的接口，所以需要注入
-    @Autowired
+    // @Autowired
     private BookDao bookDao;
     // 如果Spring里没有配置bookDao的Bean，则会检查。解决办法右键
+
+    public BookServiceImpl(BookDao bookDao){
+        this.bookDao=bookDao;
+    }
+
 
     public boolean save(Book book) {
         // 24.五个方法传参数

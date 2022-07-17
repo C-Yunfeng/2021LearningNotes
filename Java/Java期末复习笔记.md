@@ -30,26 +30,26 @@ tags:
   
   <!-- more-->
   
-  ![](https://user-images.githubusercontent.com/49241298/72427656-34148100-37c7-11ea-9163-2c610c6d5062.png)
+  ![](assets/Java期末复习笔记/72427656-34148100-37c7-11ea-9163-2c610c6d5062.png)
   
-  ![](https://user-images.githubusercontent.com/49241298/72427679-4098d980-37c7-11ea-8509-c49ba6162756.png)
+  ![](assets/Java期末复习笔记/72427679-4098d980-37c7-11ea-8509-c49ba6162756.png)
   
-  ![](https://user-images.githubusercontent.com/49241298/72427680-41317000-37c7-11ea-906a-f018dfb6014d.png)
+  ![](assets/Java期末复习笔记/72427680-41317000-37c7-11ea-906a-f018dfb6014d.png)
   
-  ![](https://user-images.githubusercontent.com/49241298/72427681-41317000-37c7-11ea-8a29-5e53242e1f83.png)
+  ![](assets/Java期末复习笔记/72427681-41317000-37c7-11ea-8a29-5e53242e1f83.png)
 
 
 
 - 强制类型转换
 
-  ![](https://user-images.githubusercontent.com/49241298/72427682-42629d00-37c7-11ea-9a28-ca8b69788426.png)
+  ![](assets/Java期末复习笔记/72427682-42629d00-37c7-11ea-9a28-ca8b69788426.png)
 
 
 
 - 表达式类型自动提升
   - char与其他类型变量运算时，自动转化为int类型再参与运算。
 
-![](https://user-images.githubusercontent.com/49241298/72427683-42fb3380-37c7-11ea-97a9-3417bd8c7fdc.png)
+![](assets/Java期末复习笔记/72427683-42fb3380-37c7-11ea-97a9-3417bd8c7fdc.png)
 
 - 总结：
   
@@ -139,7 +139,7 @@ out.println(sa[0]);//null
      - **子类与基类在同一包中**：被声明为 protected 的变量、方法和构造器能被同一个包中的任何其他类访问；
      - **子类与基类不在同一包中**：那么在子类中，子类实例可以访问其从基类继承而来的 protected 方法，而不能访问基类实例的protected方法。
      - protected 可以修饰数据成员，构造方法，方法成员，**不能修饰类（内部类除外）**。
-     - 接口及接口的成员变量和成员方法不能声明为 protected,如图：![](https://www.runoob.com/wp-content/uploads/2013/12/java-protected.gif)
+     - 接口及接口的成员变量和成员方法不能声明为 protected,如图：![](assets/Java期末复习笔记/java-protected.gif)
    
    - public：
    
@@ -269,7 +269,6 @@ out.println(sa[0]);//null
   - 构造器不能像其他方法那样直接调用，只能结合new使用。因此**在构造器中**使用this调用构造器时，可以避免创建一个新对象，还可以降低耦合性。
   - 在构造器中，如果使用this/super调用其他的构造器，则该代码应该写在**第一行**。
   - 当子类构造器要给父类中 private 的变量赋值时，就可以**直接使用super**，而非调用赋值函数。
-  - 
 
 
 ##### 3.重写
@@ -340,7 +339,7 @@ out.println(sa[0]);//null
     }
     ```
 
-    ![](https://user-images.githubusercontent.com/49241298/72427669-3c6cbc00-37c7-11ea-9060-d19c3f9b70a5.png)
+    ![](assets/Java期末复习笔记/72427669-3c6cbc00-37c7-11ea-9060-d19c3f9b70a5.png)
 
 ##### 2.final修饰符
 
@@ -577,7 +576,7 @@ out.println(sa[0]);//null
 
   - 逻辑图
 
-    ![](https://user-images.githubusercontent.com/49241298/72427672-3e367f80-37c7-11ea-996d-91d176b5cbe4.png)
+    ![](assets/Java期末复习笔记/72427672-3e367f80-37c7-11ea-996d-91d176b5cbe4.png)
 
 - 内部类的应用
 
@@ -605,7 +604,7 @@ out.println(sa[0]);//null
 | synchronized |      |      |√|||||
 | default |      |      |**√**|||||
 
-- ![11](https://user-images.githubusercontent.com/49241298/72427674-3ecf1600-37c7-11ea-9150-aedf2ad4d176.png)
+- ![11](assets/Java期末复习笔记/72427674-3ecf1600-37c7-11ea-9150-aedf2ad4d176.png)
 - synchronized也可以修饰代码块
 
 #### 四、Java集合
@@ -744,7 +743,7 @@ out.println(sa[0]);//null
 
 #### 六、Swing
 
-- ![12](https://user-images.githubusercontent.com/49241298/72427675-3f67ac80-37c7-11ea-9657-30cb5f39a94c.png)
+- ![12](assets/Java期末复习笔记/72427675-3f67ac80-37c7-11ea-9657-30cb5f39a94c.png)
 
   ```java
   //Component类提供了几个常用方法，见P_383
@@ -864,7 +863,7 @@ public class Test {
     }
     ```
 
-    ![13](https://user-images.githubusercontent.com/49241298/72427676-4098d980-37c7-11ea-8593-557851f20737.png)
+    ![13](assets/Java期末复习笔记/72427676-4098d980-37c7-11ea-8593-557851f20737.png)
 
     
 
@@ -903,6 +902,26 @@ public class Test {
 #### 九、JDBC
 
 - JDBC是java 数据库连接API，它能完成3 件事，即与一个数据库建立连接、向数据库发送SQL 语句、处理数据库返回的结果。
+
+> [lxf](https://www.liaoxuefeng.com/wiki/1252599548343744/1305152088703009)
+
+
+
+
+
+#### 泛型
+
+> [C++模板和Java泛型的区别](https://www.zhihu.com/question/33304378),
+
+
+
+
+
+#### 反射
+
+？
+
+
 
 #### N+1
 

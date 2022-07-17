@@ -79,6 +79,8 @@
 
     让实体类变成Bean
 
+    > [POJO和Java Bean的区别-GFG](https://www.geeksforgeeks.org/pojo-vs-java-beans/)
+
   - context:component-scan
 
     > 在xml文件配置了<context:component-scan>标签后，spring容器可以自动去扫描base-pack所指定的包或其子包下面的java类文件，如果扫描到有@Component、@Controller、@Service 、@Repository等注解修饰的Java类，则将这些类注册为spring容器中的bean。
@@ -88,7 +90,7 @@
   - @Service
 
   - @Repository
-
+  
   
 
 #### Spring纯注解开发
@@ -352,6 +354,8 @@
 
 - 基于Java实现MVC模型的轻量级web框架
 
+- MVC的实现里有用到AOP的思想吗？
+
 - 入门案例
 
 - 入门案例工作流程分析
@@ -558,9 +562,7 @@
 
 
 
-### 14
 
-#### 的
 
 
 
