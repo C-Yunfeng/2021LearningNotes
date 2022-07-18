@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itheima</groupId>
+    <artifactId>maven_01_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <!-- 1.打包方式与其他的module不同,聚合工程里只有一个pom.xml -->
+    <packaging>pom</packaging>
+
+    <!-- 2.设置管理的模块名称，此处写的顺序与构建顺序无关 -->
+    <modules>
+        <module>../springmvc_11_page</module>
+        <module>../maven_03_pojo</module>
+        <module>../maven_04_dao</module>
+    </modules>
+</project>

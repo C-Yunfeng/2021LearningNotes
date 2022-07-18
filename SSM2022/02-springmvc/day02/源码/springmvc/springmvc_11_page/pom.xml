@@ -9,12 +9,43 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
+  <!-- 1.配置当前工程继承自parent工程 -->
+  <parent>
+    <groupId>com.itheima</groupId>
+    <artifactId>maven_01_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../maven_01_parent/pom.xml</relativePath>
+  </parent>
+
   <dependencies>
+    <!-- 1.依赖domain运行 -->
+    <!-- 4.依赖传递，所以可以把03删掉 -->
+    <!-- <dependency> -->
+    <!--   <groupId>com.itheima</groupId> -->
+    <!--   <artifactId>maven_03_pojo</artifactId> -->
+    <!--   <version>1.0-SNAPSHOT</version> -->
+    <!-- </dependency> -->
+    <!-- 2.将maven_03_pojo的制品install到本地仓库 -->
+    <!-- 3.依赖DAO -->
+    <dependency>
+      <groupId>com.itheima</groupId>
+      <artifactId>maven_04_dao</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <!-- 5.排除依赖是隐藏当前资源对应的依赖关系。无需制定版本 -->
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>5.2.10.RELEASE</version>
     </dependency>
+
 
     <dependency>
       <groupId>org.springframework</groupId>

@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="maven_03_pojo" />
+        <module name="maven_04_dao" />
         <module name="springmvc_11_page" />
       </profile>
     </annotationProcessing>
