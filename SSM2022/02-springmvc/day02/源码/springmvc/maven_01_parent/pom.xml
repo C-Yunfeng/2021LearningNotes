@@ -11,6 +11,9 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <!-- 5.定义属性 -->
+        <servlet.version>3.1.0</servlet.version>
+        <spring.version>5.2.10.RELEASE</spring.version>
     </properties>
     <!-- 1.打包方式与其他的module不同,聚合工程里只有一个pom.xml -->
     <packaging>pom</packaging>
@@ -21,4 +24,58 @@
         <module>../maven_03_pojo</module>
         <module>../maven_04_dao</module>
     </modules>
+
+    <!-- 3.聚合依赖 -->
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+    </dependencies>
+
+
+    <!-- 4.配置可选依赖 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 6.配置其他变量 -->
+    <!-- <build> -->
+    <!--     <resources> -->
+    <!--         <resource> -->
+    <!--             <directory>${project.basedir}/src/main/resources</directory> -->
+    <!--             <filtering>true</filtering> -->
+    <!--         </resource> -->
+    <!--     </resources> -->
+    <!-- </build> -->
+
+
 </project>

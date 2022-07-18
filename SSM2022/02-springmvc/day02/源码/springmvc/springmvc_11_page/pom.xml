@@ -32,31 +32,12 @@
       <artifactId>maven_04_dao</artifactId>
       <version>1.0-SNAPSHOT</version>
       <!-- 5.排除依赖是隐藏当前资源对应的依赖关系。无需制定版本 -->
-      <exclusions>
-        <exclusion>
-          <groupId>org.apache.logging.log4j</groupId>
-          <artifactId>log4j</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>5.2.10.RELEASE</version>
-    </dependency>
-
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
-      <version>5.2.10.RELEASE</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>5.2.10.RELEASE</version>
+      <!-- <exclusions> -->
+      <!--   <exclusion> -->
+      <!--     <groupId>org.apache.logging.log4j</groupId> -->
+      <!--     <artifactId>log4j</artifactId> -->
+      <!--   </exclusion> -->
+      <!-- </exclusions> -->
     </dependency>
 
     <dependency>
@@ -86,16 +67,10 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
       <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-      <scope>provided</scope>
-    </dependency>
+
 
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -115,6 +90,19 @@
           <path>/</path>
         </configuration>
       </plugin>
+
+      <!-- 7.maven打war包打插件 -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.2</version>
+        <!-- 8.写对应打配置 -->
+        <configuration>
+          <!-- 9.没有找到web.xml，则不报错 -->
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+
     </plugins>
   </build>
 </project>

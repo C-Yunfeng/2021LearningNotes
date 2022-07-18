@@ -16,21 +16,26 @@ public class BookServiceImpl implements BookService {
     @Autowired
     private BookDao bookDao;
 
+    @Override
     public boolean save(Book book) {
         return bookDao.save(book) > 0;
     }
 
+    @Override
     public boolean update(Book book) {
         return bookDao.update(book) > 0;
     }
 
+    @Override
     public boolean delete(Integer id) {
         return bookDao.delete(id) > 0;
     }
 
+    @Override
     public Book getById(Integer id) {
         if(id == 1){
-            throw new BusinessException(Code.BUSINESS_ERR,"请不要使用你的技术挑战我的耐性!");
+            System.out.println("nothing...");
+            // throw new BusinessException(Code.BUSINESS_ERR,"请不要使用你的技术挑战我的耐性!");
         }
 //        //将可能出现的异常进行包装，转换成自定义异常
 //        try{
@@ -41,6 +46,7 @@ public class BookServiceImpl implements BookService {
         return bookDao.getById(id);
     }
 
+    @Override
     public List<Book> getAll() {
         return bookDao.getAll();
     }
