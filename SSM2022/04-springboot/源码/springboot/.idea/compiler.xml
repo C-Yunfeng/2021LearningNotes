@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_08_mybatis" />
+        <module name="springboot_09_ssm" />
+        <module name="springboot_01_quickstart" />
+        <module name="springboot_03_read_data" />
+        <module name="springboot_07_test" />
+        <module name="springboot_06_config_file" />
+        <module name="springboot_04_profile" />
+        <module name="springboot_05_maven_and_boot_profile" />
+        <module name="springmvc_11_page" />
+        <module name="springboot_02_base_config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aaa" target="1.8" />
+      <module name="spring_07_junit" target="1.8" />
+      <module name="springboot-01-quickstart" target="1.8" />
+      <module name="springboot_01_quickstart" target="1.8" />
+      <module name="springboot_02_base_config" target="1.8" />
+      <module name="springboot_03_read_data" target="1.8" />
+      <module name="springboot_04_profile" target="1.8" />
+      <module name="springboot_05_config_file" target="1.8" />
+      <module name="springboot_05_maven_and_boot_profile" target="1.8" />
+      <module name="springboot_06_config_file" target="1.8" />
+      <module name="springboot_06_maven_and_boot_profile" target="1.8" />
+      <module name="springboot_07_junit" target="1.8" />
+      <module name="springboot_07_test" target="1.8" />
+      <module name="springboot_08_mybatis" target="1.8" />
+      <module name="springboot_09_ssm" target="1.8" />
+      <module name="springboot_11_test" target="1.8" />
+      <module name="springmvc_08_ssm" target="1.5" />
+      <module name="springmvc_11_page" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aaa" options="-parameters" />
+      <module name="spring_07_junit" options="-parameters" />
+      <module name="springboot-01-quickstart" options="-parameters" />
+      <module name="springboot_01_quickstart" options="-parameters" />
+      <module name="springboot_02_base_config" options="-parameters" />
+      <module name="springboot_03_read_data" options="-parameters" />
+      <module name="springboot_04_profile" options="-parameters" />
+      <module name="springboot_05_config_file" options="-parameters" />
+      <module name="springboot_05_maven_and_boot_profile" options="-parameters" />
+      <module name="springboot_06_config_file" options="-parameters" />
+      <module name="springboot_06_maven_and_boot_profile" options="-parameters" />
+      <module name="springboot_07_junit" options="-parameters" />
+      <module name="springboot_07_test" options="-parameters" />
+      <module name="springboot_08_mybatis" options="-parameters" />
+      <module name="springboot_09_ssm" options="-parameters" />
+      <module name="springboot_11_test" options="-parameters" />
+    </option>
+  </component>
+</project>

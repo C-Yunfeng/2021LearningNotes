@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "users.likes",
+      "type": "java.lang.String",
+      "description": "Description for users.likes."
+  }
+] }

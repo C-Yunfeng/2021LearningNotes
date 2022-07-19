@@ -1,0 +1,13 @@
+course: SpringBoot
+
+users:
+  name: Alex
+  likes:
+    - music
+    - game
+
+spring:
+  profiles:
+    active: dev
+
+

@@ -613,7 +613,55 @@
   - 自定义属性：${spring.version}
   - 内置属性：${basedir}
   - mvn help:system
-- 
+
+
+
+### SpringBoot
+
+#### 简介
+
+- 快速启动
+
+  ```bash
+  java -jar springbootdemo.jar
+  ```
+
+> DAO都没有，是怎么跑的？
+
+- 自动配置
+- 起步依赖
+  - spring-boot-starter-parent
+  - spring-boot-starter-web
+- 辅助功能
+- 引导类
+
+
+
+#### 基础配置
+
+- 优先级：application.properties>application.yaml>application.yml
+
+- yaml
+
+  - 大小写敏感
+
+  - 多个值
+
+    ```yaml
+    likes:
+      - music
+      - game
+    ```
+
+- 读取的三种方式
+
+  - @Value(${course})
+  - Environment
+  - domain.users，@Component，@Autowired——private（mybatis开发时用）
+
+
+
+
 
 
 
