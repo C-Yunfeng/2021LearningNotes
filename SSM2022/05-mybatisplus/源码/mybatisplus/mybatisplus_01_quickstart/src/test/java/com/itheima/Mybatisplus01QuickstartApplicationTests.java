@@ -13,6 +13,7 @@ import java.util.List;
 @SpringBootTest
 class Mybatisplus01QuickstartApplicationTests {
 
+    // 2.装配Dao
     @Autowired
     private UserDao userDao;
 
@@ -55,7 +56,7 @@ class Mybatisplus01QuickstartApplicationTests {
 
     @Test
     void testGetByPage(){
-        //IPage对象封装了分页操作相关的数据
+        // 3.IPage对象封装了分页操作相关的数据
         IPage page  = new Page(2,3);
         userDao.selectPage(page,null);
         System.out.println("当前页码值："+page.getCurrent());

@@ -616,9 +616,9 @@
 
 
 
-### SpringBoot
+### 19
 
-#### 简介
+#### SpringBoot简介
 
 - 快速启动
 
@@ -659,11 +659,25 @@
   - Environment
   - domain.users，@Component，@Autowired——private（mybatis开发时用）
 
+- 不同环境配置
+  - [多环境配置及启动命令](https://www.jianshu.com/p/87440eefe020?u_atoken=bde68f44-3ec2-46dc-9091-8ee7a0127ea4&u_asession=01sSY1BdPVnM6ub34mc5x6qclu1-ixjRic-wM-WD2y_a5wD53EfsxZ2012fGZahnH7X0KNBwm7Lovlpxjd_P_q4JsKWYrT3W_NKPr8w6oU7K_vl-popE9tjvgMVqZ0aw-1Ppcarp92QKzyJKyYjREPlmBkFo3NEHBv0PZUm6pbxQU&u_asig=05TLfL3h27z5sjRpO60Xhk4DyIcjtv1hJQZT3E4bf-p7bDicccYWH2-vAPvXYl_3X4KPAjXqlXCLVzt7K7mPsZ6c-_CSeO8tWZTXkH_oCiGb7s2ay7Xl2026XaxYjyjYhlhnf50oNfa2vVx2XbwiE-pzggxsvw5HXJ-pXxy-0lyuL9JS7q8ZD7Xtz2Ly-b0kmuyAKRFSVJkkdwVUnyHAIJzZNNMJtbtyw4upJvN70tknARa7bfVNjn9GsCynAQDH_DWPRPQyB_SKrj-61LB_f61u3h9VXwMyh6PgyDIVSG1W_2vR0RHxOlhjkGf6MavdSG6rN4WnkP27a0CQVvwR6dMrKqE57oZsrmHIgesnmydWUUVSIScJcGq-cpWwjse-owmWspDxyAEEo4kbsryBKb9Q&u_aref=Lxu%2FDwqXq0EgnEu239QqKOvBm04%3D)
+  - 
 
 
 
+#### 配置文件分类
+
+- 在target里的application.yaml会覆盖src里的
+
+  ![image-20220724205000178](assets/JavaSSM/image-20220724205000178.png)
+
+  3/4级用于开发，1/2级用于上线
 
 
+
+### 25
+
+#### mybatisplus
 
 
 

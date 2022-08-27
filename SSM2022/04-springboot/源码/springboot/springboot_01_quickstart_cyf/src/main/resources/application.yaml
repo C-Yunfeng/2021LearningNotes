@@ -2,12 +2,12 @@ course: SpringBoot
 
 users:
   name: Alex
-  likes:
+  like's:
     - music
     - game
 
 spring:
   profiles:
-    active: dev
+    active: test
 
 

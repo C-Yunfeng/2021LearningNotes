@@ -45,6 +45,7 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 添加lombok，可以简化domain开发 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

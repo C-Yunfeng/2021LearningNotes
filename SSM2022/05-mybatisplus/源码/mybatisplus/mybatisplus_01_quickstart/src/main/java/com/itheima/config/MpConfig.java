@@ -9,9 +9,9 @@ import org.springframework.context.annotation.Configuration;
 public class MpConfig {
     @Bean
     public MybatisPlusInterceptor mpInterceptor(){
-        //1.定义Mp拦截器
+        // 4.定义Mp拦截器
         MybatisPlusInterceptor mpInterceptor = new MybatisPlusInterceptor();
-        //2.添加具体的拦截器
+        // 5.添加具体的拦截器
         mpInterceptor.addInnerInterceptor(new PaginationInnerInterceptor());
         return mpInterceptor;
     }

@@ -22,13 +22,13 @@ class Mybatisplus02DqlApplicationTests {
     @Test
     void testGetAll() {
         //方式一：按条件查询
-//        QueryWrapper qw = new QueryWrapper();
-//        qw.lt("age",18);
-//        List<User> userList = userDao.selectList(qw);
-//        System.out.println(userList);
+       // QueryWrapper qw = new QueryWrapper();
+       // qw.lt("age",18);
+       // List<User> userList = userDao.selectList(qw);
+       // System.out.println(userList);
 
-        //方式二：lambda格式按条件查询
-//        QueryWrapper<User> qw = new QueryWrapper<User>();
+        //方式二：lambda格式按条件查询，必须制定泛型
+       // QueryWrapper<User> qw = new QueryWrapper<User>();
 //        qw.lambda().lt(User::getAge, 10);
 //        List<User> userList = userDao.selectList(qw);
 //        System.out.println(userList);
@@ -44,7 +44,7 @@ class Mybatisplus02DqlApplicationTests {
 
         //并且与或者关系
 //        LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<User>();
-//        //并且关系：10到30岁之间
+//        //并且关系：10到30岁之间。支持链式编程
 //        //lqw.lt(User::getAge, 30).gt(User::getAge, 10);
 //        //或者关系：小于10岁或者大于30岁
 //        lqw.lt(User::getAge, 10).or().gt(User::getAge, 30);
@@ -55,9 +55,9 @@ class Mybatisplus02DqlApplicationTests {
 
 
         //模拟页面传递过来的查询数据
-//        UserQuery uq = new UserQuery();
-//        uq.setAge(10);
-//        uq.setAge2(30);
+       UserQuery uq = new UserQuery();
+       uq.setAge(10);
+       uq.setAge2(30);
 
         //null判定
 //        LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<User>();
@@ -68,14 +68,14 @@ class Mybatisplus02DqlApplicationTests {
 //        List<User> userList = userDao.selectList(lqw);
 //        System.out.println(userList);
 
-//        LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<User>();
-//        //先判定第一个参数是否为true，如果为true连接当前条件
-////        lqw.lt(null != uq.getAge2(),User::getAge, uq.getAge2());
-////        lqw.gt(null != uq.getAge(),User::getAge, uq.getAge());
-//        lqw.lt(null != uq.getAge2(),User::getAge, uq.getAge2())
-//           .gt(null != uq.getAge(),User::getAge, uq.getAge());
-//        List<User> userList = userDao.selectList(lqw);
-//        System.out.println(userList);
+       // LambdaQueryWrapper<User> lqw = new LambdaQueryWrapper<User>();
+       // //先判定第一个参数是否为true，如果为true连接当前条件
+       // lqw.lt(null != uq.getAge2(),User::getAge, uq.getAge2());
+       // lqw.gt(null != uq.getAge(),User::getAge, uq.getAge());
+       // lqw.lt(null != uq.getAge2(),User::getAge, uq.getAge2())
+       //    .gt(null != uq.getAge(),User::getAge, uq.getAge());
+       // List<User> userList = userDao.selectList(lqw);
+       // System.out.println(userList);
 
 
 

@@ -37,7 +37,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--TODO 添加必要的依赖坐标-->
+		<!--1.TODO 添加必要的依赖坐标-->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
