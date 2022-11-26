@@ -115,6 +115,10 @@
 
   - @Autowired
 
+    > [Spring使用@Autowired注解自动装配](https://www.yiibai.com/spring/spring-auto-wiring-beans-with-autowired-annotation.html)
+    >
+    > 非注解方式:Auto-Wiring:[Spring自动装配Beans](https://www.yiibai.com/spring/spring-auto-wiring-beans-in-xml.html)
+
   - @Qualifier
 
   - @Value

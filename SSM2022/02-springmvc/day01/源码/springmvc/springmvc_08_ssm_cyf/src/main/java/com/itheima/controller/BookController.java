@@ -12,11 +12,11 @@ import java.util.List;
 // 26.模块的公共映射
 @RequestMapping("/books")
 public class BookController {
-    //27.调用业务层接口
+    // 27.调用业务层接口
     @Autowired
     private BookService bookService;
 
-    //28.修改所有请求method
+    // 28.修改所有请求method
     @PostMapping
     // 29.参数从JSON数据获取，配置@RequestBody，或者@PathVariable。到此，后台所有功能做完了
     public boolean save(@RequestBody Book book) {
