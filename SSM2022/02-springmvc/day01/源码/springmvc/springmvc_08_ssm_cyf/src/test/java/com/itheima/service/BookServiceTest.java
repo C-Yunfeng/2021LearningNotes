@@ -25,6 +25,7 @@ public class BookServiceTest {
         Book book = bookService.getById(1);
         // 34.正式的测试需要断言匹配，这里只简单打印
         System.out.println(book);
+        System.out.println("next debug...");
         System.out.println(book.getId());
     }
 
